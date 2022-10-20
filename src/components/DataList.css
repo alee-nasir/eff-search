@@ -18,8 +18,14 @@
   width: 100%;
   border-radius: 5px;
 }
+
 .table th {
   font-size: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #321c6e;
+  color: white;
 }
 
 .table td,
@@ -37,12 +43,4 @@
 
 .table tr:hover {
   background-color: rgb(176, 137, 194);
-}
-
-.table th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #04aa6d;
-  color: white;
 }

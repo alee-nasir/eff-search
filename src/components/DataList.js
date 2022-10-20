@@ -1,11 +1,11 @@
 import React from "react";
 import "../components/DataList.css";
+import { Tourists } from "../Tourists";
 
-export default function DataList() {
+export default function DataList(props) {
   return (
     <div className="table-container">
       <h1>Tourists 2022</h1>
-
       <table className="table">
         <thead>
           <tr>
@@ -15,11 +15,15 @@ export default function DataList() {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Alfreds </td>
-            <td>Ander</td>
-            <td>alfreders@gmail.com</td>
-          </tr>
+          {Tourists.filter((tourist) =>
+            tourist.name.toLocaleLowerCase().includes(props.query)
+          ).map((tourist) => (
+            <tr>
+              <td key={tourist.id}>{tourist.name}</td>
+              <td>{tourist.surname}</td>
+              <td>{tourist.email}</td>
+            </tr>
+          ))}
         </tbody>
       </table>
     </div>
