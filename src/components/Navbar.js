@@ -4,8 +4,8 @@ import "../components/Navbar.css";
 
 export default function Navbar() {
   return (
-    <div className="nav-container">
-      <h1>React Tourism</h1>
+    <div data-testid="Navbar" className="nav-container">
+      <h1 aria-label="React Tourism">React Tourism</h1>
       <nav>
         <ul>
           <li>

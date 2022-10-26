@@ -3,13 +3,13 @@ import "../components/DataList.css";
 
 export default function DataList({ data }) {
   return (
-    <div className="table-container">
+    <div data-testid="tableContainer" className="table-container">
       <h1>Tourists 2022</h1>
-      <table className="table">
+      <table aria-label="data-table" className="table">
         <thead>
           <tr>
             <th>Name</th>
-            <th>Surname</th>
+            <th aria-label="surname">Surname</th>
             <th>Email</th>
           </tr>
         </thead>

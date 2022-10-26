@@ -30,7 +30,7 @@ export default function SearchBar() {
 
   return (
     <>
-      <div className="searchbox">
+      <div data-testid="searchcontainer" className="searchbox">
         <div className="search-elements">
           <input
             type="search"
