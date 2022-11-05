@@ -14,6 +14,7 @@ nav li {
   list-style: none;
   display: inline-block;
   padding: 0 20px;
+  font-weight: 500;
 }
 
 nav a {
@@ -24,6 +25,14 @@ nav a {
 
 nav a:hover {
   color: #ffffff;
+}
+nav button {
+  color: #cac7ff;
+  cursor: pointer;
+}
+
+nav button:hover {
+  color: white;
 }
 
 @media (max-width: 595px) {

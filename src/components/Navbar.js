@@ -18,9 +18,9 @@ export default function Navbar() {
             <a href="/Settings">Settings</a>
           </li>
           <li>
-            <a href="/theme">
-              <MdBrightness6 />
-            </a>
+            <button data-testid="theme-btn">
+              <MdBrightness6 size="1.2em" />
+            </button>
           </li>
         </ul>
       </nav>
